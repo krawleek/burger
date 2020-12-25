@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+
+}
+
+#content, body {
+  background-color:  #202232;
+
+}
+
+#content {
+  width: 90%;
+  max-width: 1680px;
+  margin: 120px auto 0;
+  padding: 0 5%;
+  position: relative;
+
+}
+
+
+
+#read-text {
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 7px;
+
+}
+
+.meal-text {
+  font-size: 138px;
+  font-weight: bold;
+  line-height: 120px;
+  text-shadow: 0px 0px 9px #202232;
+}
+
+.meal-text:hover {
+  opacity: 1 !important;
+}
+
+.transparent-text {
+  -webkit-text-stroke: 2px #EB741B;
+  color: transparent;
+
+}
+
+#burger {
+  color: #EB741B;
+  position: relative;
+  z-index: 6;
+
+}
+
+#cheese {
+  position: relative;
+  z-index: 6;
+  color: #202232;
+
+
+}
+
+#meat {
+  opacity: 0.7;
+  position: relative;
+  z-index: 2;
+  color: #202232;
+
+}
+
+#vegetable {
+  opacity: 0.4;
+  position: relative;
+  z-index: 2;
+}
+
+#sauce {
+  opacity: 0.2;
+}
+
+@keyframes move-burger {
+  from {right: 1.6%}
+  to {right: calc(100% - 50px);}
+}
+
+#burger-img {
+  position: absolute;
+  top: 28px;
+  right: 1.6%;
+  animation: move-burger 3.6s infinite alternate;
+  z-index: 4;
+
+}
+
+@keyframes move-cheese {
+  from {right: 19.1%}
+  to {right: calc(100% - 55px);}
+}
+
+#cheese-img {
+  position: absolute;
+  top: 125px;
+  right: 19.1%;
+  animation: move-cheese 4s infinite alternate;
+  z-index: 2;
+
+}
+
+@keyframes move-meat {
+  from {right: 33.7%}
+  to {right: calc(100% - 55px);}
+}
+
+#meat-img {
+  position: absolute;
+  top: 236px;
+  right: 33.7%;
+  animation: move-meat 4.5s infinite alternate;
+}
+
+@keyframes move-veg {
+  from {right: 42%}
+  to {right: calc(100% - 55px);}
+}
+
+#veg-img {
+  position: absolute;
+  top: 351px;
+  right: 42%;
+  animation: move-veg 5.1s infinite alternate;
+}
+
+.question-mark {
+  color: transparent;
+  -webkit-text-stroke: 3px #FFFFFF;
+  display: inline-block;
+
+
+
+}
+
+@keyframes question-1-move {
+  0%{-webkit-transform: translateY(0vw) translateX(0vw) rotate(28deg);}
+  20%{-webkit-transform: translateY(-0.5vw) translateX(-0.5vw) rotate(28deg);}
+  55%{-webkit-transform: translateY(0vw) translateX(0vw) rotate(28deg);}
+  85%{-webkit-transform: translateY(0.5vw) translateX(0.5vw) rotate(28deg);}
+  100%{-webkit-transform: translateY(0vw) translateX(0vw) rotate(28deg);}
+
+}
+
+#question-mark-1 {
+  -webkit-transform: rotate(28deg);
+  animation: question-1-move 4s infinite linear;
+  position: relative;
+  z-index: 5;
+
+}
+
+@keyframes question-2-move {
+  0%{-webkit-transform: translateY(0vw) translateX(0vw) rotate(64deg);}
+  27%{-webkit-transform: translateY(-0.5vw) translateX(0.5vw) rotate(64deg);}
+  43%{-webkit-transform: translateY(0vw) translateX(0vw) rotate(64deg);}
+  95%{-webkit-transform: translateY(0.5vw) translateX(-0.5vw) rotate(64deg);}
+  100%{-webkit-transform: translateY(0vw) translateX(0vw) rotate(64deg);}
+
+}
+
+#question-mark-2 {
+  -webkit-transform: rotate(64deg);
+  opacity: 0.6;
+  position: relative;
+  top: 34px;
+  left: -20px;
+  animation: question-2-move 5s infinite linear;
+  z-index: 3;
+}
+
+@keyframes question-3-move {
+  0%{-webkit-transform: translateY(0vw) translateX(0vw) rotate(80deg);}
+  16%{-webkit-transform: translateY(0.5vw) translateX(0.5vw) rotate(80deg);}
+  58%{-webkit-transform: translateY(0vw) translateX(0vw) rotate(80deg);}
+  72%{-webkit-transform: translateY(-0.5vw) translateX(-0.5vw) rotate(80deg);}
+  100%{-webkit-transform: translateY(0vw) translateX(0vw) rotate(80deg);}
+
+}
+
+#question-mark-3 {
+  -webkit-transform: rotate(80deg);
+  opacity: 0.2;
+  position: relative;
+  top: 100px;
+  left: -60px;
+  animation: question-3-move 7s infinite;
+}
+
+@keyframes rotate-products-1 {
+   from {-webkit-transform: rotate(0deg);}
+   to {-webkit-transform: rotate(360deg);}
+}
+
+.products-wrapper {
+  float: left;
+  position: relative;
+  top: -100px;
+  width: 30%;
+  max-width: 580px;
+  margin-right: 1.5%;
+}
+
+.products-wrapper img {
+  width: 100%;
+}
+
+#products-1 {
+  display: block;
+  animation: rotate-products-1 8s infinite;
+}
+
+#products-1:hover {
+  -webkit-animation-play-state: paused;
+
+
+}
+
+@keyframes rotate-products-2 {
+   from {-webkit-transform: rotate(0deg);}
+   to {-webkit-transform: rotate(-360deg);}
+}
+
+#products-2 {
+  display: block;
+  animation: rotate-products-2 5s linear infinite;
+}
+
+#products-2:hover {
+  -webkit-animation-play-state: paused;
+
+
+}
+
+@keyframes rotate-products-3 {
+   from {-webkit-transform: rotate(0deg);}
+   to {-webkit-transform: rotate(360deg);}
+}
+
+#products-3 {
+  display: block;
+  animation: rotate-products-3 10s infinite;
+  transform-origin: 55% 55%;
+}
+
+#products-3:hover {
+  -webkit-animation-play-state: paused;
+
+
+}
+
+.products {
+  position: absolute;
+  top: 21%;
+  left: 21%;
+  display: block;
+  width: 54% !important;
+}
+
+@keyframes meat-rotate {
+   from {-webkit-transform: rotate3d(1,1,1,0deg);}
+   to {-webkit-transform: rotate3d(1,1,1,360deg);}
+
+}
+
+#meat-rotate {
+
+  clear: left;
+  animation: meat-rotate 6s infinite;
+
+
+}
+
+@keyframes cheese-rotate {
+   from {-webkit-transform: rotate3d(1,0,0,0deg);}
+   to {-webkit-transform: rotate3d(1,0,0,360deg);}
+
+}
+
+#cheese-rotate {
+  animation: cheese-rotate 6s infinite;
+}
+
+@keyframes tomato-rotate {
+   from {-webkit-transform: rotate3d(0,1,1,0deg);}
+   to {-webkit-transform: rotate3d(0,1,1,360deg);}
+
+}
+
+#tomato-rotate {
+  animation: tomato-rotate 10s infinite;
+  transform-origin: 55% 55%;
+
+}
+
+#burger-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+#footer {
+  padding: 50px 5%;
+  color: white;
+  background-color: #181923;
+  width: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#design-text {
+  color: #7D7D7D;
+  margin-bottom: 30px;
+}
+
+#footer-text {
+
+  display: inline-block;
+  position: absolute;
+  left: 5%;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+
+}
+
+#footer-social {
+  position: absolute;
+  right: 5%;
+  display: inline-block;
+
+}
+
+#footer-social a {
+  margin: 0 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+@media screen and (max-width: 1024px) {
+  .products-wrapper {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #content {
+    text-align: center;
+  }
+
+  .question-mark {
+    position: absolute !important;
+
+  }
+  #question-mark-2 {
+    margin-left: 60px;
+    left: initial;
+  }
+  #question-mark-3 {
+    margin-left: 80px;
+    left: initial;
+
+  }
+}
